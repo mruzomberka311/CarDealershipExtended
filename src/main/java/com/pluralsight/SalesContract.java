@@ -7,13 +7,32 @@ public abstract class SalesContract extends Contract{
         super(date, name, email, vehicleSold, totalPrice, monthlyPayment);
     }
 
+    private double salesTaxAmount;
+    private double recordingFee;
+    private double processingFee;
+    private boolean FinanceOption;
+
     @Override
-    public double getTotalPrice() {
+    public double getTotalPrice()
+    {
+        double salesTaxAmount = getVehicleSold().getPrice() - (getVehicleSold().getPrice() * .05);
+        double recordingFee = 100;
+        double processingFee = 0;
+
+        if (getVehicleSold().getPrice() < 10000)
+        {
+            processingFee = 295;
+
+        } if (getVehicleSold().getPrice() > 10000)
+        {
+          processingFee = 495;
+        }
         return getVehicleSold().getPrice() + salesTaxAmount + recordingFee + processingFee;
     }
 
     @Override
     public double getMonthlyPayment() {
+        boolean financeOption = true;
         int numberOfPayments = 0;
         double interestRate = 0;
         if (financeOption) {
