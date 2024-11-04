@@ -68,4 +68,5 @@ public abstract class Contract {
     public void setMonthlyPayment(double monthlyPayment) {
         this.monthlyPayment = monthlyPayment;
     }
+
 }
