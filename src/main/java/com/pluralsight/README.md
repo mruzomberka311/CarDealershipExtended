@@ -5,7 +5,7 @@ In this project, we are tasked with adding additional functions to the car deals
 sale or lease. The goal is to create a Sale and a Lease class as children of the Contract class. The Contract class is and abstract class. The contract is saved, and appended to the contracts file in the system that can display the history of contracts. The user 
 also gains the ability to make a sale or lease in the main menu. 
 
-![Class Diagram](path/to/your/class_diagram.png)
+[Car Dealership Class Diagram.drawio](..%2F..%2F..%2F..%2F..%2FCar%20Dealership%20Class%20Diagram.drawio) 
 
 ## User Stories
 - As a user, I would like to buy or lease a car and have it documented.
