@@ -63,6 +63,9 @@ public class UserInterface {
                     quit = true;
                     break;
                 case "10":
+                    displayVehicles();
+                    writeSalesContract();
+                    writeLeaseContract();
 
                 default:
                     System.out.println("Invalid choice. Please try again.");
