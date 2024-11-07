@@ -53,5 +53,19 @@ public abstract class SalesContract extends Contract{
         }
     }
 
+    public double getSalesTaxAmount() {
+        return salesTaxAmount;
+    }
 
+    public double getRecordingFee() {
+        return recordingFee;
+    }
+
+    public double getProcessingFee() {
+        return processingFee;
+    }
+
+    public boolean isFinanceOption() {
+        return FinanceOption;
+    }
 }

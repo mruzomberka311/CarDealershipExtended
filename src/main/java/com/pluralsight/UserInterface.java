@@ -62,6 +62,8 @@ public class UserInterface {
                 case "99":
                     quit = true;
                     break;
+                case "10":
+
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }
